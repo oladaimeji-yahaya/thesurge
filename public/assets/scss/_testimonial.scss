@@ -1,0 +1,76 @@
+//testimonial
+.what_say_area {
+    background: rgb(57, 74, 106);
+    padding: 110px 0 70px 0;
+    position: relative;
+    .dot_right {
+        position: absolute;
+        right: 0;
+        top: 36%;
+        z-index: 3;
+    }
+    .client_box {
+        margin-bottom: 50px;
+        .client_img {
+            float: left;
+            text-align: center;
+            margin-right: 40px;
+            overflow: hidden;
+            .c_img {
+                margin-bottom: 25px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background: #007aff;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    z-index: 4;
+                    border-radius: 50%;
+                    opacity: 0.5;
+                    @include transition;
+                   
+                }
+                &:hover::before {
+                    right:0;
+                    left: 100%;
+                    background: transparent; 
+                 }
+            }
+            .ci_2::before {
+                background: #f05a21;
+            }
+            .ci_3::before {
+                background: #a6c437;
+            }
+            h6 {
+                color: $heding;
+                font: 700 16px/26px $font;
+                }
+            a {
+                color: $heding;
+                font: 400 16px/26px $font;
+                display: inline-block;
+                
+            }
+        }
+        .client_text {
+            background: $heding;
+            overflow: hidden;
+            padding: 40px 50px;
+            .icon {
+                margin-bottom: 26px;
+            }
+            p {
+                color: $heding2;
+                font: 600 16px/28px $font;
+            }
+        }
+    }
+}
+
+  
+
+  

@@ -1,0 +1,145 @@
+//team
+.team_area {
+    background: $bc;
+    padding: 110px 0 130px 0;
+    overflow: hidden;
+    .img_box {
+        text-align: center;
+        padding: 30px 30px;
+        img {
+            max-width: 100%;
+            @include transition;
+            
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        h5 {
+            color: $heding;
+            font: 700 20px/28px $font;
+            margin-top: 40px;
+        }
+        span {
+            color: #697080;
+            font: 400 20px/28px $font;
+            margin-top: 10px;
+        }
+    }
+    .ib_2 {
+        padding-left: 323px;
+    }
+    .ib_3 {
+        padding-right: 323px;
+    }
+}
+//faq
+.faq_area {
+	background: $bc2;
+    padding: 110px 0 80px 0;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../images/invest/plane_shap5.png) no-repeat;
+        width: 74px;
+        height: 74px;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+        animation: BottomToTop 5s infinite;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../images/invest/round_shap4.png) no-repeat;
+        width: 74px;
+        height: 74px;
+        right: 150px;
+        top: 21%;
+        z-index: 9;
+        animation: doublePulse 10s infinite;
+    }
+    .nav-tabs {
+        border-bottom: 1px solid #232642;
+        .nav-link.active {
+            color: $heding; 
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid $theme_color;
+        }
+        .nav-link {
+            border: 0;
+            border-radius: 0;
+            padding: 0;
+            padding-bottom: 20px;
+        }
+        .nav-link:nth-child(1) {
+            margin-right: 166px;
+        }
+        .nav-link:nth-child(2) {
+            margin-right: 166px;
+        }
+    }
+    .faq_desc{
+        margin-top: 58px;
+        h5 {
+            color: $heding;
+            font: 600 20px/28px $font;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    } 
+}
+//brand
+.brand_area {
+	background: $bc;
+    padding: 130px 0 130px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a.item {
+        img
+        {
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+//home_2
+//team_area
+.ta_2 {
+    background: $bc4;
+    .img_box {
+        h5 {
+        color: $heding2;
+        }
+    }
+}
+//faq_area
+.faq_2{
+    background: $heding;
+    .nav-tabs {
+            border-bottom: 1px solid #cedce9;
+        a.nav-link{
+            h6{
+                color: $heding2;
+            }
+        } 
+    }
+    .faq_desc{
+        h5 {
+            color: $heding2;
+        }
+        p {
+            color: $pfont;
+        }
+    } 
+}
+//brand_area
+.ba_2{
+    background: $bc4;
+}

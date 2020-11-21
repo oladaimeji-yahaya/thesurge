@@ -1,0 +1,76 @@
+/* Min header area */
+.header_area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+    z-index: 9;
+    border-bottom: 1px solid #1b1e3b;
+
+    .right-btn {
+        float: right;
+         a.th_btn {
+            background: #1b1e3b;
+            color: #e5f4ff;
+            border-radius: 0;
+            padding: 20px 30px;
+            font-size: 14px;
+            display: inline-block;
+            border: 0;
+        }
+    }
+    .main-menu {
+        nav {
+            li {
+                display: inline-block;
+                position: relative;
+                margin-right: 30px;
+                a {
+                    color: #e5f4ff;
+                    font: 600 14px/1 "Hind Guntur", sans-serif;
+                    display: block;
+                    padding: 26px 0 14px 0;
+                }
+                &:hover > a {
+                    color: $theme-color;
+                }
+                .submenu {
+                    position: absolute;
+                    width: 150px;
+                    background: $bc;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition;
+                    text-align: center;
+                    left: 0;
+                    top: 110%;
+
+                    li {
+                        margin: 0;
+                        a {
+                            display: block;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+                &:hover > .submenu {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+            }
+        }
+    }
+}
+//home_2
+//header_2
+.header_2{
+    background: $bc3;
+}
+//sticky_menu //fixed_menu
+.sticky-menu {
+	position: fixed;
+    background: $heding2;
+    z-index: 120;
+}
+  

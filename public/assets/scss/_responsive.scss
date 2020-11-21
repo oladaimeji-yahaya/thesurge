@@ -1,0 +1,249 @@
+// Extra Large devices (desktops, less than 1231px)
+@media (max-width: 1590px){ 
+	.our_mission_area {
+        padding: 120px 30px 70px 30px;
+    }
+    .start_mining_area {
+        padding: 110px 50px 30px 50px;
+    }
+    .popular_feature_area {
+        padding: 109px 50px 80px 50px;
+    }
+}
+// Large devices (desktops, less than 1231px)
+@media (max-width: 1440px) { 
+    .banner_area .right-ilustrat {
+        margin-left: -10px;
+    }
+	.our_mission_area {
+        padding: 120px 0 70px 0px;
+    }
+    .start_mining_area {
+        padding: 110px 0px 30px 0px;
+    }
+    .mining_invest_area .right_img {
+        margin-left: 0;
+    }
+    .popular_feature_area {
+        padding: 109px 0px 80px 0px;
+    }
+}
+@media (max-width: 1199px) {
+    .banner_area .right-ilustrat {
+        margin-left: -10px;
+    } 
+	.right-ilustrat img {
+        max-width: 100%;
+    }
+    .our_mission_area {
+        padding: 120px 0 70px 0px;
+    }
+    .title h2 {
+        font: 700 30px/50px "Hind Guntur", sans-serif;
+    }
+    .our_mission_area .mission_text {
+        padding-left: 0;
+    }
+    .our_roadmap_area .road_text {
+        padding-right: 114px;
+    }
+    .our_roadmap_area .rt_2 {
+        padding-right: 0;
+        margin-left: 120px;
+        padding-bottom: 0;
+        margin-bottom: 40px;
+    }
+    .mining_invest_area .right_img {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .start_mining_area .mining_text {
+        padding: 25px 7px;
+    }
+    .easily_acces .left_img1 {
+        margin-left: 0px;
+        max-width: 100%;
+    }
+    .team_area .ib_2 {
+        padding-left: 240px;
+    }
+    .faq_area .nav-tabs .nav-link:nth-child(1) {
+        margin-right: 60px;
+    }
+    .faq_area .nav-tabs .nav-link:nth-child(2) {
+        margin-right: 60px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+	.header_area {
+        padding-top: 40px;
+    }
+    .banner_area {
+        padding: 230px 0 70px 0;
+    }
+    .our_mission_area {
+        padding: 70px 0 35px 0px;
+    }
+    .mining_invest_area {
+        padding: 70px 0 50px 0;
+    }
+    .title {
+        padding-bottom: 30px;
+    }
+    .start_mining_area {
+        padding: 70px 0px 0px 0px;
+    }
+    .mining_text h3 {
+        padding-top: 10px;
+    }
+    .popular_feature_area {
+        padding: 70px 0px 40px 0px;
+    }
+    .our_roadmap_area {
+        padding: 70px 0px 70px 0px;
+    }
+    .our_roadmap_area .road_text {
+        padding-right: 0;
+    }
+    .our_roadmap_area .rt_2 {
+        padding-right: 0;
+        margin-left: 0;
+        padding-bottom: 0;
+        margin-bottom: 40px;
+    }
+    .what_say_area {
+        padding: 70px 0 35px 0;
+    }
+    .team_area {
+        padding: 70px 0 35px 0;
+    }
+    .team_area .ib_2 {
+        padding-left: 0;
+    }
+    .team_area .ib_3 {
+        padding-right: 0;
+    }
+    .faq_area {
+        padding: 70px 0 35px 0;
+    }
+    .brand_area {
+        padding: 70px 0 70px 0;
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+	.banner_area {
+        padding: 160px 0 25px 0;
+    }
+    .banner_area .banner_content h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    .banner_area .banner_content p {
+        margin-bottom: 10px;
+    }
+    .banner_area .right-ilustrat {
+        margin-top: 50px;
+    }
+    .our_mission_area {
+        padding: 30px 0 35px 0px;
+    }
+    .mining_text h3 {
+        padding-top: 10px;
+    }
+    .our_roadmap_area .road_text::before {
+        top: 55%;
+    }
+    .our_roadmap_area .rt_2::before {
+        display: none;
+    }
+    .our_roadmap_area .road_text::after {
+        display: none;
+    }
+    .faq_area .nav-tabs .nav-link:nth-child(1) {
+        margin-right: 20px;
+    }
+    .faq_area .nav-tabs .nav-link:nth-child(2) {
+        margin-right: 20px;
+    }
+} 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .banner_area .right-ilustrat {
+        margin-top: 50px;
+    }
+	.title h2 {
+        line-height: 40px;
+    }
+    .start_mining_area {
+        padding: 40px 0px 0px 0px;
+    }
+    .mining_text h3 {
+        padding-top: 10px;
+    }
+    .popular_feature_area {
+        padding: 40px 0px 20px 0px;
+    }
+    .our_roadmap_area {
+        padding: 40px 0px 40px 0px;
+    }
+    .what_say_area {
+        padding: 50px 0 20px 0;
+    }
+    .what_say_area .client_box .client_img {
+        float: none;
+        text-align: center;
+        margin-right: 40px;
+        overflow: hidden;
+        width: 100px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    .faq_area .nav-tabs .nav-link:nth-child(1) {
+        margin-right: 8px;
+    }
+    .faq_area .nav-tabs .nav-link:nth-child(2) {
+        margin-right: 8px;
+    }
+}
+
+// Extra small devices (portrait phones, less than 360px and 420px) 
+@media (max-width:420px){
+	.banner_area .right-ilustrat {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 360px) {
+    .banner_area {
+        padding: 160px 0 25px 0;
+    }
+    .banner_area .banner_content h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    .banner_area .banner_content p {
+        margin-bottom: 10px;
+    }
+    .banner_area .right-ilustrat {
+        margin-top: 50px;
+    }
+    .our_mission_area {
+        padding: 30px 0 35px 0px;
+    }
+    .what_say_area .client_box .client_text {
+        padding: 15px 20px;
+    }
+    .what_say_area .client_box .client_img {
+        float: none;
+        text-align: center;
+        margin-right: 40px;
+        overflow: hidden;
+        width: 100px;
+        height: 180px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,73 @@
+/* ------------------------------------------------------
+@File: Default Styles
+@Template Name: DigitMin - Bitcoin & Cryptocurrency HTML Template
+@Author: kitket
+@Developed By: Hasan Mahmud
+@Developer URL:https://flatdesigner.net
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+------------------------------------------------------- */
+
+/* ====================================================== 
+
+Table of Content:
+01/ Variables
+02/ Prefix
+03/ animat
+04/ header
+05/ banner
+06/ mission
+07/ feature
+08/ testimonial
+09/ team
+10/ footer
+11/ responsive
+
+===================================================== */ 
+
+/*----------------------------------------------------*/
+@import "variables";
+/*----------------------------------------------------*/  
+@import "prefix";
+/*----------------------------------------------------*/  
+@import "animat";
+/*----------------------------------------------------*/ 
+@import "header"; 
+/*----------------------------------------------------*/  
+@import "banner";  
+/*----------------------------------------------------*/  
+@import "mission";  
+/*----------------------------------------------------*/  
+@import "feature";  
+/*----------------------------------------------------*/  
+@import "testimonial";  
+/*----------------------------------------------------*/  
+@import "team";  
+/*----------------------------------------------------*/   
+@import "footer";  
+/*----------------------------------------------------*/  
+
+
+
+ 
+@import "responsive";
+/*---------------------------------------------------- */  
+
+/*All CSS call*/ 
+@import "../css/bootstrap.min.css"; /* Bootstrap CSS */
+/* Icon CSS */
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css'); 
+@import "../css/font-awesome.min.css";  
+@import "../vendors/flat-icon/flaticon.css";
+/* Extra Plugins CSS */ 
+@import "../vendors/animate-css/animate.css"; 
+@import "../vendors/owl-carousel/owl.carousel.min.css";  
+@import "../vendors/magnify-popup/magnific-popup.css";  
+@import "../vendors/jquery-ui/jquery-ui.min.css"; 
+@import "../vendors/bootstrap-selector/nice-select.css"; 
+@import "../vendors/lightbox/simpleLightbox.css";     
+@import "../vendors/meanMenu/meanmenu.css";     
+/* Font family link */ 
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap');

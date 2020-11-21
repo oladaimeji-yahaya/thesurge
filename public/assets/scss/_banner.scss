@@ -1,0 +1,73 @@
+//banner_area
+.banner_area {
+    padding: 100px 0 150px 0;
+    overflow: hidden;
+	background-image: -moz-linear-gradient( 41deg, rgb(13,15,45) 0%, rgb(16,18,48) 100%);
+	background-image: -webkit-linear-gradient( 41deg, rgb(13,15,45) 0%, rgb(16,18,48) 100%);
+    background-image: -ms-linear-gradient( 41deg, rgb(13,15,45) 0%, rgb(16,18,48) 100%);
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../images/banner/ban_shap1.png) no-repeat left bottom;
+        max-width: 982px;
+        height: 456px;
+        z-index: 1;
+    }
+    .banner_content {
+        position: relative;
+        z-index: 9;
+        h1 {
+            color: $heding;
+            font: 700 60px/70px $font;
+            margin-bottom: 20px;
+            span {
+                color: $theme-color;
+            }
+        }
+        p {
+            color: $heding;
+            font: 400 18px/28px $font;
+            margin-bottom: 35px;
+        }
+        .btn_list {
+            li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+    .right-ilustrat {
+        margin-left: 60px;
+        position: relative;
+        z-index: 9;
+    }
+    .particles-js-canvas-el {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+//banner_area2
+.ba_2 {
+    background: $heding;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        background: url(../images/banner/ban_shap2.png) no-repeat left bottom;
+        max-width: 1152px;
+        height: 728px;
+        z-index: 1; 
+    }
+    .banner_content {
+        h1{
+            color: $heding2;
+        }
+        p{
+            color:$pfont ;
+        }
+    }
+    
+}

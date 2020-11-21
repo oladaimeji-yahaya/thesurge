@@ -1,0 +1,125 @@
+//footer
+.footer_area {
+	padding: 130px 0 0 0;
+	background: $bc2;
+	overflow: hidden;
+	.footer_widget{
+		margin-bottom: 40px;
+		.fot_logo {
+			margin-bottom: 35px;
+			display: inline-block;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+		.fot_list{
+			li {
+				display: inline-block;
+				margin-right: 30px;
+				a {
+					color: $heding;
+					position: relative;
+					display: inline-block;
+					&::before {
+						position: absolute;
+						content: "";
+						border: 1px dashed #4a7497;
+						padding: 10px 10px;
+						line-height: 1;
+						display: inline-block;
+						transform: rotate(-40deg);
+						border-radius: 5px;
+						width: 30px;
+						height: 30px;
+						left: -9px;
+						top: -6px;
+						&:hover{
+							border: 1px dashed #17d984;
+						}
+					}
+					&:hover {
+						color: #17d984;
+					}	
+				}
+			}
+		}
+		h5 {
+			color: $heding;
+			font: 700 25px/28px $font;
+			margin-bottom: 40px;
+			margin-top: 23px;
+		} 
+		.input_area{
+			input::-webkit-input-placeholder { /* Edge */
+				color: $bc4;
+			  }
+			  
+			  input:-ms-input-placeholder { /* Internet Explorer */
+				color: $bc4;
+			  }
+			  
+			  input::placeholder {
+				color: $bc4;
+			  }
+			.form-control {
+				background: rgba(229, 244, 255, 0.051);
+				border-radius: 0;
+				border: 1px solid rgba(74, 116, 151, 0.4);
+				outline: none;
+				margin-bottom: 15px;
+				color: $heding;
+				max-width: 100%;
+				box-shadow: none;
+			}
+		} 
+		.cta_list{
+			li{
+				a {
+					color: $heding;
+					font: 600 16px/28px $font;
+					margin-bottom: 20px;
+					display: inline-block;
+					i {
+						margin-right: 8px;
+						font-size: 12px;
+					}
+					&:hover{
+						color: #17d984;
+					}
+				}
+			} 
+		} 
+	}
+	.copy_right {
+		text-align: center;
+		margin-top: 60px;
+		background: $bc;
+		padding: 25px 0;
+		a {
+			color: $heding;
+			font: 400 16px/28px $font;
+		}
+	}  
+}
+//home_2
+//footer_area
+.fa_2 {
+	background: #394a6a;
+	.footer_widget {
+		p{
+			color: #daf0ff;
+		}
+		.cta_list{
+				li 	{
+					a{
+						color: #daf0ff; 
+					}
+			}
+		} 
+	}
+	.cr_2 {
+		background: #364665;
+	} 
+}
+  
+  

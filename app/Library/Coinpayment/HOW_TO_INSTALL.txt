@@ -1,0 +1,59 @@
+# Copy Controllers/Coinpayment folder to application's app/Contollers.
+# Copy files in Config to application's config folder.
+# Insert this code in web route file
+    require base_path('app/Library/Coinpayment/Routes/coinpayment.php');
+# Add '/coinpayment/ipn' to VerifyCsrfToken middleware exclusion list
+# Register files in Commands in application's app/Console/Kernel.php and configure scheduling
+# Update configuration for coinspayment.post_verify, coinspayment.post_payment and coinspayment.investment_table
+# Use App\Library\Coinpayment\Traits\CoinpaymentTrait::getCoinpaymentBtnFormData to generate data for investment view
+# Copy files in Migration to application's database/migrations folder (Note: Don't copy the folder for creating jobs table if it already exists).
+# Run php artisan migrate or paste in phpmyadmin
+
+        SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+        SET AUTOCOMMIT = 0;
+        START TRANSACTION;
+        SET time_zone = "+00:00";
+
+        CREATE TABLE `coinpayment_trx_logs` (
+          `id` int(10) UNSIGNED NOT NULL,
+          `user_id` int(11) NOT NULL,
+          `payment_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+          `reference` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+          `payment_address` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+          `amount` double(20,8) NOT NULL,
+          `coin` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `fiat` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `status_text` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `status` int(11) NOT NULL DEFAULT '0',
+          `payment_created_at` datetime DEFAULT NULL,
+          `expired` datetime DEFAULT NULL,
+          `confirmation_at` datetime DEFAULT NULL,
+          `confirms_needed` int(11) NOT NULL DEFAULT '0',
+          `qrcode_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `status_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `payload` text COLLATE utf8_unicode_ci,
+          `wire_currency` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `wire_amount` double(20,8) DEFAULT NULL,
+          `wire_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `wire_address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+          `wire_status` int(11) NOT NULL DEFAULT '0',
+          `created_at` timestamp NULL DEFAULT NULL,
+          `updated_at` timestamp NULL DEFAULT NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+        ALTER TABLE `coinpayment_trx_logs`
+          ADD PRIMARY KEY (`id`);
+
+        ALTER TABLE `coinpayment_trx_logs`
+          MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+        COMMIT;
+
+
+
+
+Auto payment Deployment
+----------------
+Create coinspayment_trx table
+Add wallet_address to settings
+Copy codes
+Test and turn off Test Coin
